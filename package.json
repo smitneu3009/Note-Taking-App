@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "sass": "sass scss/index.scss dist/main.css",
     "start": "concurrently \"npm run start-server\" \"npm run start-client\"",
     "start-server": "node server.js",
     "start-client": "live-server --port=5500"

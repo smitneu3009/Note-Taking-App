@@ -1,8 +1,8 @@
-// server.js
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const dotenv = require('dotenv'); // Import dotenv module
+const path = require('path'); // Import path module
 
 // Load environment variables from .env file
 dotenv.config();
@@ -30,6 +30,9 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 db.once('open', () => {
     console.log('Connected to MongoDB');
 });
+
+// Serve static files from the 'public' directory
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Mount meeting notes routes
 app.use('/meeting-notes', meetingNotesRouter);
