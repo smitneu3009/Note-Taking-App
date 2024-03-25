@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "sass": "sass scss/index.scss dist/main.css",
-    "start": "node server.js"
+    "start": "concurrently \"npm run start-server\" \"npm run start-client\"",
+    "start-server": "node server.js",
+    "start-client": "live-server --port=5500"
   },
   "author": "",
   "license": "ISC",
@@ -15,5 +16,8 @@
     "express": "^4.19.1",
     "mongoose": "^8.2.3",
     "sass": "^1.72.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
   }
 }
