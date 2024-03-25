@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Taking App</title>
+    <link rel="stylesheet" href="dist/main.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-brand">My Notes</div>
+        <button id="create-note" class="btn-create-note">Create Note</button>
+        <div class="search-bar">
+            <input id="search-input" type="text" placeholder="Search...">
+            <button id="search-button" class="btn-search">Search</button>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>All Notes</h2>
+        <ul id="notes-list"></ul>
+    </div>
+
+    <!-- Main content area -->
+    <div class="main-content">
+        <div class="expanded-note">
+            <!-- Content will be dynamically added here -->
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

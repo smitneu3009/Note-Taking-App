@@ -1,0 +1,171 @@
+/* Variables */
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  background-color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.7411764706); /* Dark background for navbar */
+}
+
+.navbar-brand {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  text-align: center; /* Center the text content */
+  margin-left: 50%;
+}
+
+.btn-create-note,
+.btn-theme-toggle {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-create-note:hover,
+.btn-theme-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.4901960784);
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #000000;
+  padding: 20px;
+  /* border: 1px solid; */
+  height: 100vh; /* Set the height to 100% of the viewport height */
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  display: flex;
+  /* margin-left: 36%; */
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  color: white;
+}
+
+.main-content {
+  margin-left: 275px;
+  padding: 20px;
+  margin-top: -51%;
+}
+
+.expanded-note {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 100vh;
+}
+
+/* Rest of your existing styles */
+/* CSS */
+#create-note-form, #edit-note-form, .expanded-view {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#create-note-form label, #edit-note-form label, .expanded-view h2 {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#create-note-form input[type=text],
+#create-note-form textarea,
+#edit-note-form input[type=text],
+#edit-note-form textarea,
+.expanded-view ul,
+.expanded-view p {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#create-note-form button[type=submit],
+#edit-note-form button[type=submit],
+.expanded-view button {
+  background-color: #383838;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#create-note-form button[type=submit]:hover,
+#edit-note-form button[type=submit]:hover,
+.expanded-view button[type=submit]:hover {
+  background-color: #000000;
+}
+
+#notes-list {
+  padding: 17px;
+  color: white;
+}
+
+.note {
+  padding-bottom: 29px;
+  cursor: pointer;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input[type=text] {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 8px;
+  width: 200px;
+}
+
+.search-bar input[type=text]:focus {
+  outline: none;
+  border-color: #007bff; /* Change border color on focus */
+}
+
+.btn-search {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-search:hover {
+  background-color: #0056b3; /* Darker background color on hover */
+}
+
+/*# sourceMappingURL=main.css.map */
